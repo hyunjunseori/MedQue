@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedQue.Page1"
+             Title="진료과를 입력하세요">
+
+    <ScrollView>
+        <StackLayout Padding="10">
+
+            <!-- 진료과 입력 -->
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <Label Text="진료과:" VerticalOptions="Center" />
+                <Entry Placeholder="진료과를 입력하세요" HorizontalOptions="FillAndExpand" />
+                <Button Text="입력 완료" />
+            </StackLayout>
+
+            <!-- 진료실/진료의 입력 -->
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <Label Text="진료실/진료의:" VerticalOptions="Center" />
+                <Entry Placeholder="담당 의사를 입력하세요" HorizontalOptions="FillAndExpand" />
+                <Button Text="입력 완료" />
+            </StackLayout>
+
+            <!-- 목록 -->
+            <Frame BorderColor="WhiteSmoke" Padding="10">
+                <StackLayout>
+                    <Label Text="1. 대기 환자" />
+                    <Label Text="2. 대기 환자" />
+                    <Label Text="3. 대기 환자" />
+                    <Label Text="4. 대기 환자" />
+                </StackLayout>
+            </Frame>
+
+            <!-- 진료 대기 시간  -->
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <Label Text="진료 대기 시간 :" VerticalOptions="Center" />
+            </StackLayout>
+
+            <!-- 알림 옵션 -->
+            <StackLayout>
+                <Label Text="알림 옵션:" />
+                <Picker Title="옵션 종류를 선택하세요">
+                    <!-- Picker items go here -->
+                </Picker>
+            </StackLayout>
+
+            <!-- 공지사항 -->
+            <StackLayout>
+                <Button Text="알림 설정" />
+                <Editor Placeholder="공지사항" />
+                <Button Text="공지사항 저장" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
